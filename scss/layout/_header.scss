@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 70%;
+  max-height: 83px;
+
+  @media screen and (max-width: $tablet-max) {
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 70%;
+    max-height: 150px;
+  }
+
+  @media screen and (max-width: $mobile-min) {
+    align-items: flex-end;
+    width: 86%;
+    max-height: 150px;
+  }
+    &__logo {
+      font-size: 24px;
+      padding: 16px 0 17px 70px;
+      line-height: 26px;
+      letter-spacing: 2.4px;
+      color: $color-white-default;
+
+      @media screen and (max-width: $tablet-max) {
+        padding: 16px 0 17px 0px;
+      }
+    }
+    &__nav {
+      padding:26px 25px 22px 50px;
+      width:100%;
+      .nav__links {
+         display: flex;
+         flex-direction: row;
+        justify-content: flex-end;
+
+        @media screen and (max-width: $tablet-max) {
+          flex-direction: column;
+          transform: translate(-34px, -90px);
+
+        }
+         .nav__item {
+           margin-right: 37px;
+
+         }
+        }
+      }
+    }
+

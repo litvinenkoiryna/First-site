@@ -1,0 +1,29 @@
+button {
+  background-color: $color-blue-background;
+  color: $color-white-default;
+  width: 228px;
+  height: 60px;
+  letter-spacing: 1.2px;
+  font-size: $description-font-size;
+  font-family: $font-secondary;
+
+
+}
+
+.search__button{
+    width:150px;
+    padding: 15px 7px 18px 30px;
+    opacity: 50%;
+    border: 2px solid #FFFFFF;
+    i{
+      margin-left: 14px;
+      font-size: 21px;
+      margin-top: 6px;
+    }
+}
+
+.book__now{
+  margin-top: 48px;
+  margin-bottom: 47px;
+}
+

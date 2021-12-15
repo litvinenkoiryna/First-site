@@ -1,0 +1,30 @@
+.footer {
+  background-color: $color-black-spain;
+  width: 100%;
+  height: 25vw;
+  max-height: 271px;
+  margin-bottom: 10px;
+
+  &__text {
+    text-align: center;
+    transform: translate(0.5%, 147%);
+    margin-right: 9px;
+    .after__title{
+      margin-top: 10px;
+    }
+    .sosial_icon {
+      display: flex;
+      justify-content: space-around;
+      width: 11%;
+      margin: 0 auto;
+      transform: inherit;
+      &:hover {
+        color: $color-blue-background;
+
+       }
+      }
+    }
+  }
+
+
+

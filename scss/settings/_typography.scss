@@ -1,0 +1,128 @@
+a {
+  text-decoration: none;
+  color: $color-white-default;
+}
+.header {
+  line-height:$line-height-default;
+  &__logo {
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    color: $color-white-default;
+  }
+  &__nav {
+   font-family: $font-secondary;
+    font-size: $nav-font-size ;
+    }
+  }
+
+ .banner__title {
+   line-height:$line-height-default;
+   font-family: $font-primary;
+   .main__title{
+     font-size: $h1-font-size;
+     letter-spacing: 4.8px;
+     font-weight: bold;
+     text-transform: uppercase;
+     }
+   .after__title{
+     font-size: 22px;
+     letter-spacing: 6.82px;
+   }
+  }
+.search{
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  padding: 21px 21px 21px 29px;
+  text-overflow: clip;
+  border: 2px solid #FFFFFF;
+  width: 500px;
+  height: 60px;
+  text-align: center;
+  &__button{
+    font-family: $font-secondary;
+    letter-spacing: 1.4px;
+    font-size: 14px;
+  }
+   }
+
+.scroll{
+  font-size: $nav-font-size;
+  letter-spacing: 2.8px;
+}
+
+.h2__title {
+  font-family: $font-secondary;
+  font-size: $h2-font-size;
+  line-height: $line-height-default;
+  @media screen and (max-width:$mobile-min) {
+    font-size: 25px;
+    line-height: 15px;
+  }
+}
+.text__description {
+  line-height: $line-height-default;
+  color: $color-white-primary;
+  letter-spacing: -2px;
+  @media screen and (max-width: $mobile-min) {
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+
+.choose__description {
+    letter-spacing: 1.6px;
+  }
+
+  .spain {
+    font-size: 20px;
+    font-family: $font-primary;
+    line-height: $line-height-default;
+    @media screen and (max-width: $tablet-max) {
+      font-size: 13px;
+    }
+
+    &__title {
+      text-transform: uppercase;
+    }
+
+    &__p {
+      font-size: 20px;
+      letter-spacing: 1.5px;
+      color: $color-white-primary;
+    }
+  }
+
+  .last__bannertitle{
+    font-size: $h2-font-size ;
+
+  }
+  .last__texttitle {
+    font-size: 20px;
+    line-height: $line-height-default;
+    color: $color-white-some;
+    text-transform: uppercase;
+  }
+
+
+  .footer {
+    &__text {
+      .after__title {
+        line-height: $line-height-default;
+        letter-spacing: 1.4px;
+      }
+    }
+
+    &__logo {
+      .logo__link {
+        font-size: 24px;
+        line-height: $line-height-default;
+        letter-spacing: 3.36px;
+        color: $color-white-default;
+      }
+    }
+  }
+
+
+
+
+
