@@ -12,7 +12,7 @@
     max-height: 150px;
   }
 
-  @media screen and (max-width: $mobile-min) {
+  @media screen and (max-width: $mobile-max) {
     align-items: flex-end;
     width: 86%;
     max-height: 150px;
@@ -39,7 +39,6 @@
         @media screen and (max-width: $tablet-max) {
           flex-direction: column;
           transform: translate(-34px, -90px);
-
         }
          .nav__item {
            margin-right: 37px;

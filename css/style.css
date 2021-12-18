@@ -143,7 +143,7 @@ a {
   font-family: "Josefin Sans";
   line-height: 26px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .spain {
     font-size: 13px;
   }
@@ -179,7 +179,7 @@ a {
   color: #ffffff;
 }
 
-button {
+.button {
   background-color: #5474FD;
   color: #ffffff;
   width: 228px;
@@ -188,22 +188,22 @@ button {
   font-size: 16px;
   font-family: "Aleo";
 }
-
-.search__button {
-  width: 150px;
-  padding: 15px 7px 18px 30px;
-  opacity: 50%;
-  border: 2px solid #FFFFFF;
+.button__book-now {
+  margin-top: 48px;
+  margin-bottom: 47px;
 }
-.search__button i {
+.button__search {
+  width: 150px;
+  transform: translate(-6px, 2px);
+  opacity: 50%;
+  border: 2px solid #ffffff;
+  padding: 10px 10px 13px 35px;
+  font-size: 13px;
+}
+.button__search i {
   margin-left: 14px;
   font-size: 21px;
   margin-top: 6px;
-}
-
-.book__now {
-  margin-top: 48px;
-  margin-bottom: 47px;
 }
 
 .body {
@@ -222,7 +222,7 @@ button {
   width: 70%;
   max-height: 83px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .header {
     justify-content: flex-start;
     flex-direction: column;
@@ -230,7 +230,7 @@ button {
     max-height: 150px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px -1) {
   .header {
     align-items: flex-end;
     width: 86%;
@@ -244,7 +244,7 @@ button {
   letter-spacing: 2.4px;
   color: #ffffff;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .header__logo {
     padding: 16px 0 17px 0px;
   }
@@ -258,7 +258,7 @@ button {
   flex-direction: row;
   justify-content: flex-end;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .header__nav .nav__links {
     flex-direction: column;
     transform: translate(-34px, -90px);
@@ -291,7 +291,7 @@ button {
     height: 75vw;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .banner {
     height: 78vw;
   }
@@ -307,7 +307,7 @@ button {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .banner__title {
     transform: translate(0%, 29%);
   }
@@ -344,7 +344,7 @@ button {
   width: 500px;
   height: 60px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .banner .search {
     width: 300px;
   }
@@ -386,13 +386,13 @@ button {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .choose {
     flex-direction: column;
     height: 80vw;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px -1) {
   .choose {
     height: 200vw;
   }
@@ -406,12 +406,12 @@ button {
     transform: translate(-40px, 37px);
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .choose__text {
     transform: translate(38px, 7px);
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px -1) {
   .choose__text {
     transform: translate(5px, 7px);
   }
@@ -431,13 +431,13 @@ button {
   flex-direction: column;
   margin-left: 5px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .choose__img {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px -1) {
   .choose__img {
     margin-left: 22px;
   }
@@ -468,7 +468,7 @@ button {
   justify-content: center;
   padding-bottom: 19px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .icons {
     background: #333333;
     flex-wrap: wrap;
@@ -482,7 +482,7 @@ button {
 }
 .icons .icon .hand {
   margin-bottom: 28px;
-  padding-top: 0px;
+  padding-top: 13px;
 }
 .icons .icon img {
   width: 62px;
@@ -514,7 +514,7 @@ button {
   transform: translate(328px, 226px);
   padding: 40px 33px 2px 30px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .spain__house .house__text {
     opacity: 68%;
     transform: translate(0%, -1%);
@@ -534,14 +534,14 @@ button {
   top: 32%;
   right: 19.3%;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .spain__mountain .mountain__text {
     opacity: 68%;
     top: 0%;
     right: 19.3%;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px -1) {
   .spain__mountain .mountain__text {
     right: 0.3%;
   }
@@ -565,7 +565,7 @@ button {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .last__banner {
     height: 75vw;
   }
@@ -590,7 +590,7 @@ button {
   margin: 0;
   transform: translate(4px, 4px);
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px -1) {
   .last__img {
     transform: translate(122px, -2px);
     max-width: 164px;
@@ -606,7 +606,7 @@ button {
   transform: translate(3px, 23px);
   margin: 0;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px -1) {
   .last__text {
     max-width: 200px;
     transform: translate(-143px, 23px);
@@ -619,12 +619,12 @@ button {
 .text__but {
   max-width: none;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1023px) {
   .text__but {
     max-width: 250px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px -1) {
   .text__but {
     max-width: 150px;
   }
