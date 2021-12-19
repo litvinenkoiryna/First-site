@@ -194,7 +194,7 @@ a {
 }
 .button__search {
   width: 150px;
-  transform: translate(-6px, 2px);
+  transform: translate(-6px, 3px);
   opacity: 50%;
   border: 2px solid #ffffff;
   padding: 10px 10px 13px 35px;
@@ -222,12 +222,17 @@ a {
   width: 70%;
   max-height: 83px;
 }
+@media screen and (max-width: 1440px) {
+  .header {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 1023px) {
   .header {
     justify-content: flex-start;
     flex-direction: column;
-    width: 70%;
-    max-height: 150px;
+    transform: translate(-34px, 7px);
+    line-height: 19px;
   }
 }
 @media screen and (max-width: 768px -1) {
@@ -293,7 +298,7 @@ a {
 }
 @media screen and (max-width: 1023px) {
   .banner {
-    height: 78vw;
+    height: 62vw;
   }
 }
 @media screen and (max-width: 375px) {
@@ -386,10 +391,15 @@ a {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1440px) {
+  .choose {
+    height: 50vw;
+  }
+}
 @media screen and (max-width: 1023px) {
   .choose {
     flex-direction: column;
-    height: 80vw;
+    height: 90vw;
   }
 }
 @media screen and (max-width: 768px -1) {
@@ -447,7 +457,12 @@ a {
 }
 @media screen and (max-width: 1440px) {
   .choose__img .mountains {
-    transform: translate(-11px, 16px);
+    transform: translate(1px, 19px);
+  }
+}
+@media screen and (max-width: 1023px) {
+  .choose__img .mountains {
+    transform: translate(-11px, 63px);
   }
 }
 .choose__img .house {
@@ -455,22 +470,49 @@ a {
 }
 @media screen and (max-width: 1440px) {
   .choose__img .house {
-    transform: translate(-10px, 16px);
+    transform: translate(1px, 20px);
   }
 }
 
-.icons {
+.three__icons {
   background-image: url("../img/HowitWorks.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 19vw;
+  margin-bottom: -2px;
+  border-top: 1 px solid black;
+}
+@media screen and (max-width: 1440px) {
+  .three__icons {
+    background: #333333;
+    height: 25vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .three__icons {
+    height: auto;
+  }
+}
+
+.img__icons > img {
   width: 100%;
+}
+
+.icons {
+  width: 90%;
   display: flex;
-  margin-top: -4px;
+  margin-top: -3px;
   justify-content: center;
-  padding-bottom: 19px;
+  padding-bottom: 31px;
+  padding-bottom: 0px;
+}
+@media screen and (max-width: 1440px) {
+  .icons {
+    margin-top: 0px;
+  }
 }
 @media screen and (max-width: 1023px) {
   .icons {
-    background: #333333;
     flex-wrap: wrap;
   }
 }
@@ -479,6 +521,11 @@ a {
   flex-direction: column;
   align-items: center;
   margin: 87px 88px 100px 85px;
+}
+@media screen and (max-width: 1440px) {
+  .icons .icon {
+    margin: 61px 39px 14px 42px;
+  }
 }
 .icons .icon .hand {
   margin-bottom: 28px;
@@ -514,10 +561,10 @@ a {
   transform: translate(328px, 226px);
   padding: 40px 33px 2px 30px;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1440px) {
   .spain__house .house__text {
     opacity: 68%;
-    transform: translate(0%, -1%);
+    transform: translate(10%, 10%);
   }
 }
 
@@ -534,19 +581,12 @@ a {
   top: 32%;
   right: 19.3%;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1440px) {
   .spain__mountain .mountain__text {
     opacity: 68%;
-    top: 0%;
-    right: 19.3%;
+    transform: translate(17%, -21%);
   }
 }
-@media screen and (max-width: 768px -1) {
-  .spain__mountain .mountain__text {
-    right: 0.3%;
-  }
-}
-
 .spain__title {
   margin-top: 26px;
   margin-bottom: 13px;
@@ -565,6 +605,11 @@ a {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1440px) {
+  .last__banner {
+    height: 65vw;
+  }
+}
 @media screen and (max-width: 1023px) {
   .last__banner {
     height: 75vw;
@@ -577,6 +622,11 @@ a {
   align-items: center;
   width: 96%;
 }
+@media screen and (max-width: 1440px) {
+  .last__bannercontent {
+    flex-direction: column;
+  }
+}
 
 .last__bannertitle {
   font-family: "Aleo";
@@ -585,10 +635,20 @@ a {
   line-height: 26px;
   transform: translate(-4px, -72px);
 }
+@media screen and (max-width: 1440px) {
+  .last__bannertitle {
+    transform: translate(-1px, -49px);
+  }
+}
 
 .last__img {
   margin: 0;
   transform: translate(4px, 4px);
+}
+@media screen and (max-width: 1440px) {
+  .last__img {
+    transform: translate(148px, -22px);
+  }
 }
 @media screen and (max-width: 768px -1) {
   .last__img {
@@ -605,6 +665,12 @@ a {
   padding: 50px 39px 9px 44px;
   transform: translate(3px, 23px);
   margin: 0;
+}
+@media screen and (max-width: 1440px) {
+  .last__text {
+    padding: 4px 39px 9px 44px;
+    transform: translate(-64px, -21px);
+  }
 }
 @media screen and (max-width: 768px -1) {
   .last__text {
