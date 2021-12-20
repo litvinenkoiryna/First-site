@@ -1,4 +1,4 @@
-button {
+.button {
   background-color: $color-blue-background;
   color: $color-white-default;
   width: 228px;
@@ -6,24 +6,30 @@ button {
   letter-spacing: 1.2px;
   font-size: $description-font-size;
   font-family: $font-secondary;
+  &:hover{
+    background-color: $color-white-default;
+    color: $color-blue-background;
+  }
+
+  &__book-now {
+    margin-top: 48px;
+    margin-bottom: 47px;
+  }
 
 
-}
-
-.search__button{
-    width:150px;
-    padding: 15px 7px 18px 30px;
+  &__search {
+    width: 150px;
+    transform: translate(-6px, 2px);
     opacity: 50%;
-    border: 2px solid #FFFFFF;
-    i{
+    border: 2px solid $color-white-default;
+    padding: 10px 10px 13px 35px;
+    font-size: $search-button-font-size;
+
+    i {
       margin-left: 14px;
       font-size: 21px;
       margin-top: 6px;
     }
-}
-
-.book__now{
-  margin-top: 48px;
-  margin-bottom: 47px;
+  }
 }
 

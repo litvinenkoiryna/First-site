@@ -11,12 +11,16 @@
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width:$tablet-max) {
-    flex-direction: column;
-    height: 80vw;
+  @media screen and (max-width: $desktop) {
+    height: 50vw;
   }
-  @media screen and (max-width:$mobile-min) {
-    height: 200vw;
+
+  @media screen and (max-width: $tablet-max) {
+    flex-direction: column;
+    height: 90vw;
+  }
+  @media screen and (max-width: $mobile-max) {
+    height: 159vw;
 
   }
 
@@ -24,15 +28,15 @@
     max-width: 560px;
     transform: translate(-102px, 37px);
 
-    @media screen and (max-width: 1440px) {
-      transform: translate(-40px, 37px);
+    @media screen and (max-width: $desktop) {
+      transform: translate(-28px, 37px);
     }
 
-    @media screen and (max-width:$tablet-max) {
+    @media screen and (max-width: $tablet-max) {
       transform: translate(38px, 7px);
 
     }
-    @media screen and (max-width:$mobile-min) {
+    @media screen and (max-width: $mobile-max) {
       transform: translate(5px, 7px);
 
     }
@@ -57,46 +61,77 @@
     flex-direction: column;
     margin-left: 5px;
 
-    @media screen and (max-width:$tablet-max) {
+    @media screen and (max-width: $tablet-max) {
       flex-direction: row;
       flex-wrap: wrap;
-      }
-    @media screen and (max-width:$mobile-min) {
+    }
+    @media screen and (max-width: $mobile-max) {
       margin-left: 22px;
 
     }
-
-    .mountains {
-      transform: translate(24px, 2px);
-
-      @media screen and (max-width: 1440px) {
-        transform: translate(-11px, 16px);
-      }
+  .mountains {
+    transform: translate(24px, 2px);
+    @media screen and (max-width: $desktop) {
+      transform: translate(1px, 19px);
     }
-
-    .house {
-        transform: translate(115px, 16px);
-
-        @media screen and (max-width: 1440px) {
-          transform: translate(-10px, 16px);
+    @media screen and (max-width: $tablet-max) {
+      transform: translate(-11px, 63px);
+    }
+    @media screen and (max-width: $mobile-max) {
+      transform: translate(-8%, 19%);
+      width: 50%;
+    }
+  }
+  .house {
+      transform: translate(115px, 16px);
+        @media screen and (max-width: $desktop) {
+          transform: translate(1px, 20px);
         }
-
+        @media screen and (max-width: $mobile-max) {
+          transform: translate(-2%, 19%);
+          width: 50%;
+        }
       }
+  }
+}
+  .three__icons{
+    background-image: url("../img/HowitWorks.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 19vw;
+    margin-bottom: -2px;
+    border-top: 1px solid black;
+
+      @media screen and (max-width: $desktop) {
+        background: $color-gray-background;
+        height: 25vw;
+      }
+      @media screen and (max-width: $tablet-max) {
+        height: auto;
+      }
+  }
+
+  .img__icons {
+     & > img {
+      width: 100%;
     }
   }
 
   .icons {
-    background-image: url("../img/HowitWorks.jpg");
-    background-size: cover;
-    width: 100%;
+    width: 90%;
     display: flex;
-    margin-top: -4px;
+    margin-top: -3px;
     justify-content: center;
-    padding-bottom: 19px;
-
-    @media screen and (max-width:$tablet-max) {
-      background: #333333;
-      flex-wrap: wrap;
+    padding-bottom:31px;
+    margin-left: 87px;
+      @media screen and (max-width: $desktop) {
+        margin-top: 0;
+        padding-bottom: 0;
+        margin-left: 0px;
+      }
+      @media screen and (max-width: $tablet-max) {
+        flex-wrap: wrap;
+        margin-left: 0px;
     }
 
     .icon {
@@ -105,9 +140,16 @@
       align-items: center;
       margin: 87px 88px 100px 85px;
 
+      @media screen and (max-width: $desktop) {
+        margin: 61px 39px 14px 42px;
+      }
+      @media screen and (max-width: $tablet-max) {
+
+      }
+
       .hand {
         margin-bottom: 28px;
-        padding-top: 0px;
+        padding-top: 13px;
       }
 
       img {
@@ -130,10 +172,16 @@
     position: relative;
     height: 39vw;
     max-height: 700px;
+
+     @media screen and (max-width: $mobile-max){
+       height: 88vw;
+     }
+
   }
 
   .spain__house {
     background-image: url("../img/Rectangle41445.jpg");
+    align-items: center;
 
     .house__text {
       background-color: $color-black-spain;
@@ -142,10 +190,13 @@
       transform: translate(328px, 226px);
       padding: 40px 33px 2px 30px;
 
-      @media screen and (max-width:$tablet-max){
+      @media screen and (max-width: $desktop) {
         opacity: 68%;
-        transform: translate(0%, -1%);
-        }
+        transform: translate(10%, 10%);
+      }
+        @media screen and (max-width: $mobile-max){
+          transform: translate(0%, -1%)
+      }
     }
   }
 
@@ -158,20 +209,19 @@
       opacity: 90%;
       max-width: 536px;
       position: absolute;
-      padding: 42px 27px 4px 32px;
+      padding: 40px 33px 2px 30px;
       top: 32%;
       right: 19.3%;
-      @media screen and (max-width:$tablet-max) {
+      @media screen and (max-width: $desktop) {
         opacity: 68%;
-        top: 0%;
-        right: 19.3%;
+        transform: translate(17%, -21%);
       }
-      @media screen and (max-width: $mobile-min) {
-        right: 0.3%;
+      @media screen and (max-width: $mobile-max){
+        transform: translate(0%, 0%);
+        position: static;
       }
     }
   }
-
 
   .spain__title {
     margin-top: 26px;
@@ -190,35 +240,56 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: $desktop) {
+      height: 65vw;
+    }
     @media screen and (max-width: $tablet-max) {
       height: 75vw;
     }
+    @media screen and (max-width: $mobile-max) {
+      height: 100vw;
+    }
   }
-    .last__bannercontent {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 96%;
+
+  .last__bannercontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+
+    @media screen and (max-width: $desktop) {
+      flex-direction: column;
     }
 
-    .last__bannertitle {
-      font-family: $font-secondary;
-      font-weight: normal;
-      font-size: $h2-font-size;
-      line-height: $line-height-default;
-      transform: translate(-4px, -72px);
+  }
+
+  .last__bannertitle {
+
+    transform: translate(-4px, -72px);
+
+    @media screen and (max-width: $desktop) {
+      transform: translate(-1px, -49px);
     }
+  }
 
 
   .last__img {
     margin: 0;
-    transform: translate(4px,4px);
+    transform: translate(4px, 4px);
 
-    @media screen and (max-width: $mobile-min){
-      transform: translate(122px, -2px);
+    @media screen and (max-width: $desktop) {
+      transform: translate(148px, -22px);
+    }
+    @media screen and (max-width: $tablet-max) {
+      transform: translate(-9px, -22px);
+    }
+    @media screen and (max-width: $mobile-max) {
       max-width: 164px;
+      transform: translate(-10px, -2px);
     }
   }
+
 
   .last__text {
     background-image: url("../img/last_grey.png");
@@ -226,24 +297,39 @@
     height: 18vw;
     max-height: 327px;
     padding: 50px 39px 9px 44px;
-    transform: translate(3px, 23px);
+    transform: translate(14px, 24px);
     margin: 0;
-      @media screen and (max-width: $mobile-min){
-        max-width: 200px;
-        transform: translate(-143px, 23px);
+
+    @media screen and (max-width: $desktop) {
+      padding: 4px 39px 9px 44px;
+      transform: translate(-64px, -21px);
+    }
+    @media screen and (max-width: $tablet-max) {
+      transform: translate(-10px, -22px);
+    }
+    @media screen and (max-width: $mobile-max) {
+      height: auto;
+      transform: translate(0px,30px);
     }
 
     &__title {
       margin-bottom: 10px;
     }
+
+
+    .text__but {
+      max-width: none;
+      @media screen and (max-width: $tablet-max) {
+        max-width: 250px;
+      }
+      @media screen and (max-width: $mobile-max) {
+        max-width: 250px;
+      }
+    }
   }
-.text__but {
-  max-width: none;
-     @media screen and (max-width: $tablet-max){
-       max-width: 250px;
-     }
-     @media screen and (max-width: $mobile-min) {
-       max-width:150px;
-     }
-}
+
+
+
+
+
 

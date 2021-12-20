@@ -4,48 +4,56 @@
   align-items: flex-end;
   width: 70%;
   max-height: 83px;
+  @media screen and (max-width: $desktop) {
+    width: 90%;
+  }
 
   @media screen and (max-width: $tablet-max) {
     justify-content: flex-start;
     flex-direction: column;
-    width: 70%;
-    max-height: 150px;
+    transform: translate(-34px, 7px);
+    line-height: 19px;
   }
 
-  @media screen and (max-width: $mobile-min) {
+  @media screen and (max-width: $mobile-max) {
     align-items: flex-end;
-    width: 86%;
-    max-height: 150px;
+    width: 94%;
+    max-height: 86px;
+    transform: translate(-14px, 7px);
   }
-    &__logo {
-      font-size: 24px;
-      padding: 16px 0 17px 70px;
-      line-height: 26px;
-      letter-spacing: 2.4px;
-      color: $color-white-default;
+
+  &__logo {
+    font-size: 24px;
+    padding: 16px 0 17px 70px;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    color: $color-white-default;
+
+    @media screen and (max-width: $tablet-max) {
+      padding: 16px 0 17px 0px;
+    }
+  }
+
+  &__nav {
+    padding: 26px 25px 22px 50px;
+    width: 100%;
+
+    .nav__links {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
 
       @media screen and (max-width: $tablet-max) {
-        padding: 16px 0 17px 0px;
+        flex-direction: column;
+        transform: translate(-34px, -90px);
+      }
+
+      .nav__item {
+        margin-right: 37px;
+
       }
     }
-    &__nav {
-      padding:26px 25px 22px 50px;
-      width:100%;
-      .nav__links {
-         display: flex;
-         flex-direction: row;
-        justify-content: flex-end;
+  }
+}
 
-        @media screen and (max-width: $tablet-max) {
-          flex-direction: column;
-          transform: translate(-34px, -90px);
-
-        }
-         .nav__item {
-           margin-right: 37px;
-
-         }
-        }
-      }
-    }
 
