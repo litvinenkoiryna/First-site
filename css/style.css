@@ -224,7 +224,6 @@ a {
 }
 .button__search {
   width: 150px;
-  transform: translate(-6px, 2px);
   opacity: 50%;
   border: 2px solid #ffffff;
   padding: 10px 10px 13px 35px;
@@ -377,6 +376,9 @@ a {
 }
 .banner form {
   margin-bottom: 72px;
+}
+.banner label {
+  display: flex;
 }
 .banner .search {
   padding: 12px 21px 10px 40px;
