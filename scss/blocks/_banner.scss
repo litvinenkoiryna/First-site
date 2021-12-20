@@ -62,7 +62,9 @@
   form {
     margin-bottom: 72px;
   }
-
+label{
+  display: flex;
+}
   .search {
     padding: 12px 21px 10px 40px;
     border: 2px solid $color-white-default;
