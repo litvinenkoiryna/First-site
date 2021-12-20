@@ -5,10 +5,19 @@
   max-height: 271px;
   margin-bottom: 10px;
 
+  @media screen and (max-width: $mobile-max){
+    height: 39vw;
+  }
+
+
   &__text {
     text-align: center;
     transform: translate(0.5%, 147%);
     margin-right: 9px;
+
+    @media screen and (max-width: $tablet-max){
+      transform: translate(0.5%, 36%);
+    }
     .after__title{
       margin-top: 10px;
     }

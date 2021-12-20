@@ -6,6 +6,10 @@
   letter-spacing: 1.2px;
   font-size: $description-font-size;
   font-family: $font-secondary;
+  &:hover{
+    background-color: $color-white-default;
+    color: $color-blue-background;
+  }
 
   &__book-now {
     margin-top: 48px;
@@ -15,7 +19,7 @@
 
   &__search {
     width: 150px;
-    transform: translate(-6px, 3px);
+    transform: translate(-6px, 2px);
     opacity: 50%;
     border: 2px solid $color-white-default;
     padding: 10px 10px 13px 35px;

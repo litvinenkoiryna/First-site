@@ -14,11 +14,11 @@
   }
 
   @media screen and (max-width: $tablet-max) {
-    height: 62vw;
+    height: 70vw;
 
   }
-  @media screen and (max-width: $mobile-min) {
-    height: 188vw;
+  @media screen and (max-width: $mobile-max) {
+    height: 157vw;
   }
 
 
@@ -32,7 +32,7 @@
       transform: translate(0%, 29%);
     }
     @media screen and (max-width: $mobile-min) {
-      transform: translate(8.1%, 33%)
+      transform: translate(2.1%, 33%)
     }
 
     .main__title {
@@ -44,6 +44,9 @@
     .after__title {
       margin-bottom: 52px;
       margin-right: 42px;
+      @media screen and (max-width: $mobile-max) {
+        margin-right: 5px;
+      }
     }
   }
 
@@ -69,8 +72,9 @@
     @media screen and (max-width: $tablet-max) {
       width: 300px;
     }
-    @media screen and (max-width: $mobile-min) {
-      width: 100px;
+    @media screen and (max-width: $mobile-max) {
+      width: 50%;
+      margin-left: 5px;
     }
 
     &:hover {
